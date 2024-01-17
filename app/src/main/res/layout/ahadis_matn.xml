@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/hadismatn_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_matn">
+
+        <RelativeLayout
+            android:id="@+id/hadismatn_top"
+            android:layout_width="@dimen/listact_kadr_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:background="@drawable/kadr_midl"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/hadismatn_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="aaaa sssss ddd fffff  "
+                android:textColor="#175001"
+                android:textSize="@dimen/txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:layout_toLeftOf="@+id/hadismatn_top"
+            android:background="@drawable/kadr_left">
+            <ImageView
+                android:id="@+id/hadismatn_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_ico"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:layout_toRightOf="@+id/hadismatn_top"
+            android:background="@drawable/kadr_right">
+            <ImageView
+                android:id="@+id/hadismatn_tanzimat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_ico"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/hadismatn_search_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hadismatn_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_list_margintop">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_kadr" />
+                <ImageView
+                    android:id="@+id/hadismatn_hazf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_hazf_ico"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="3dp"/>
+                <EditText
+                    android:id="@+id/hadismatn_inputSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:textSize="@dimen/tab_size"
+                    android:textColor="#6d260e"
+                    android:layout_marginRight="@dimen/listact_edt_marginright"
+                    android:layout_marginLeft="@dimen/listact_edt_marginleft"
+                    android:hint="جستجو">
+                    <requestFocus />
+                </EditText>
+            </FrameLayout>
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/hadismatn_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/listact_mlist_margintop"
+            android:layout_marginLeft="@dimen/listact_mlist_marginleft"
+            android:layout_marginRight="@dimen/listact_mlist_marginleft"
+            android:layout_marginBottom="@dimen/listact_mlist_marginbot"
+            android:layout_below="@+id/hadismatn_search_rel"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical"
+            android:cacheColorHint="#00000000"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hadismatn_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/kadr_marginright"
+        android:layout_marginLeft="@dimen/kadr_marginright"
+        android:layout_marginTop="@dimen/kadr_marginbot"
+        android:layout_marginBottom="@dimen/kadr_marginbot"
+        android:background="@drawable/kadr"></RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/hadismatn_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/matntemplate_btn_marginbot"
+        android:layout_marginRight="@dimen/matntemplate_txt_marginleft"
+        android:layout_marginLeft="@dimen/matntemplate_txt_marginleft">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board_btn2"/>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/matntemplate_table_marginleft"
+            android:layout_marginLeft="@dimen/matntemplate_table_marginleft"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal">
+
+
+                <ImageView
+                    android:id="@+id/hadismatn_qalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_qalam" />
+
+
+                <ImageView
+                    android:id="@+id/hadismatn_alaqemandiha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_alaqemandiha2" />
+
+                <ImageView
+                    android:id="@+id/hadismatn_kuchak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_kuchak" />
+
+                <ImageView
+                    android:id="@+id/hadismatn_bozorg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_bozorg" />
+
+                <ImageView
+                    android:id="@+id/hadismatn_eshterak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_eshterak" />
+
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+</FrameLayout>

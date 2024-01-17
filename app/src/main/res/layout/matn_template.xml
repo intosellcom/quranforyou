@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/matntemp_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/matntemp_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/row_90"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:layout_marginRight="@dimen/listact_kadr_marginright"
+            android:layout_marginLeft="@dimen/listact_kadr_marginright">
+
+            <TextView
+                android:id="@+id/matntemp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="aaaa sssss ddd fffff  fffffffff fff"
+                android:textColor="#175001"
+                android:textSize="@dimen/txt_size"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="@dimen/listact_kadrtxt_marginright"
+                android:layout_marginLeft="@dimen/listact_kadrtxt_marginright"/>
+        </RelativeLayout>
+
+
+
+
+
+            <ScrollView
+                android:id="@+id/matntemp_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/matntemp_top"
+                android:layout_marginTop="@dimen/matntemplate_margintop"
+                android:cacheColorHint="#00000000"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/matntemplate_rel_marginleft"
+                    android:layout_marginRight="@dimen/matntemplate_rel_marginleft"
+                    android:layout_marginTop="@dimen/matntemplate_rel_margintop">
+
+                    <TextView
+                        android:id="@+id/matntemp_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:gravity="right"
+                        android:lineSpacingExtra="7.0dip"
+                        android:lineSpacingMultiplier="1.0"
+                        android:text="aa "
+                        android:textColor="#292828"
+                        android:textSize="@dimen/txt_size" />
+                </RelativeLayout>
+            </ScrollView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/matntemp_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kadr"></RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/matntemp_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/matntemplate_btn_marginbot"
+        android:layout_marginRight="@dimen/matntemplate_txt_marginleft"
+        android:layout_marginLeft="@dimen/matntemplate_txt_marginleft">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board_btn2"/>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/matntemplate_table_marginleft"
+            android:layout_marginLeft="@dimen/matntemplate_table_marginleft"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal">
+
+
+                <ImageView
+                    android:id="@+id/matntemp_qalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_qalam" />
+
+
+                <ImageView
+                    android:id="@+id/matntemp_alaqemandiha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_alaqemandiha2" />
+
+                <ImageView
+                    android:id="@+id/matntemp_kuchak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_kuchak" />
+
+                <ImageView
+                    android:id="@+id/matntemp_bozorg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_bozorg" />
+
+                <ImageView
+                    android:id="@+id/matntemp_eshterak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_eshterak" />
+
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+</FrameLayout>

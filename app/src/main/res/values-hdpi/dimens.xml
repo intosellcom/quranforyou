@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_size_big2">21sp</dimen>
+    <dimen name="txt_size_big">18sp</dimen>
+    <dimen name="txt_size">16sp</dimen>
+    <dimen name="tab_size">14sp</dimen>
+    <dimen name="tab_size_kuchak">12sp</dimen>
+    <dimen name="line_space">1dp</dimen>
+
+    <dimen name="dashbord_board_marginbot">12dp</dimen>
+    <dimen name="dashbord_board_marginright">15dp</dimen>
+    <dimen name="kadr_marginbot">4dp</dimen>
+    <dimen name="kadr_marginright">1dp</dimen>
+    <dimen name="listact_kadr_width">135dp</dimen>
+    <dimen name="listact_kadr_margintop">23dp</dimen>
+    <dimen name="listact_kadr_marginright">40dp</dimen>
+    <dimen name="listact_kadrtxt_marginright">15dp</dimen>
+    <dimen name="listact_mlist_margintop">5dp</dimen>
+    <dimen name="listact_mlist_marginleft">17dp</dimen>
+    <dimen name="listact_mlist_marginbot">10dp</dimen>
+    <dimen name="listqoran_hezb_size">28dp</dimen>
+    <dimen name="listqoran_list_size">23dp</dimen>
+    <dimen name="rowqoran_margin">3dp</dimen>
+    <dimen name="rowqoran_numtxt_margin">35dp</dimen>
+    <dimen name="rowqoran_tozihattxt_margin">40dp</dimen>
+    <dimen name="rowqoran_tozihattxt_margintop">23dp</dimen>
+    <dimen name="rowqoran_fatehe_w">90dp</dimen>
+    <dimen name="rowqoran_fatehe_h">40dp</dimen>
+
+    <dimen name="row_rel_margin">12dp</dimen>
+    <dimen name="row_txt_margin">30dp</dimen>
+    <dimen name="rowbig_txt_marginright">35dp</dimen>
+    <dimen name="rowbig_txt_marginleft">70dp</dimen>
+    <dimen name="row_star_margin">40dp</dimen>
+
+    <dimen name="dashbord_circlr_margintop">0dp</dimen>
+    <dimen name="dashbord_circlr_height">280dp</dimen>
+    <dimen name="dashbord_header_marginbot">30dp</dimen>
+    <dimen name="dashbord_katibe_margintop">20dp</dimen>
+    <dimen name="dashbord_circlr_shoa">3dp</dimen>
+    <dimen name="dashbord_table_margin">30dp</dimen>
+    <dimen name="dashbord_botheader_margin">25dp</dimen>
+
+
+
+    <dimen name="listact_edt_marginright">28dp</dimen>
+    <dimen name="listact_edt_marginleft">10dp</dimen>
+    <dimen name="listact_list_margin">16dp</dimen>
+    <dimen name="listact_list_margintop">5dp</dimen>
+
+
+    <dimen name="header_btnboard_margin">25dp</dimen>
+
+    <dimen name="matntemplate_table_margin">15dp</dimen>
+    <dimen name="matntemplate_margintop">10dp</dimen>
+    <dimen name="matntemplate_btn_marginright">35dp</dimen>
+    <dimen name="matntemplate_btn_marginbot">18dp</dimen>
+    <dimen name="matntemplate_rel_margintop">5dp</dimen>
+    <dimen name="matntemplate_rel_marginleft">20dp</dimen>
+    <dimen name="matntemplate_txt_marginleft">30dp</dimen>
+    <dimen name="matntemplate_table_marginleft">5dp</dimen>
+
+
+    <dimen name="context_viewpager_marginleft">7dp</dimen>
+    <dimen name="context_btn_marginleft">20dp</dimen>
+    <dimen name="context_btn_marginbot">15dp</dimen>
+    <dimen name="context_list_marginleft">5dp</dimen>
+    <dimen name="context_header_padtop">3dp</dimen>
+
+    <dimen name="tanzimat_scrol_marginleft">15dp</dimen>
+
+    <dimen name="majale_margin">25dp</dimen>
+
+    <dimen name="gallery_size">270dp</dimen>
+</resources>

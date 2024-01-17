@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/listqoran_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/listqoran_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_90"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:layout_marginRight="@dimen/listact_kadr_marginright"
+            android:layout_marginLeft="@dimen/listact_kadr_marginright">
+            <TextView
+                android:id="@+id/listqoran_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaa sssss ddd fffff  "
+                android:textSize="@dimen/txt_size"
+                android:textColor="#175001"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="@dimen/listact_kadrtxt_marginright"
+                android:layout_marginLeft="@dimen/listact_kadrtxt_marginright"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/listqoran_search_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listqoran_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_list_margintop">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_kadr" />
+                <ImageView
+                    android:id="@+id/listqoran_hazf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_hazf_ico"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="3dp"/>
+                <EditText
+                    android:id="@+id/listqoran_inputSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:textSize="@dimen/tab_size"
+                    android:textColor="#6d260e"
+                    android:layout_marginRight="@dimen/listact_edt_marginright"
+                    android:layout_marginLeft="@dimen/listact_edt_marginleft"
+                    android:hint="جستجو">
+                    <requestFocus />
+                </EditText>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/listqoran_joz"
+            android:layout_width="@dimen/listqoran_hezb_size"
+            android:layout_height="wrap_content"
+            android:text="جز"
+            android:textColor="#660000"
+            android:layout_below="@+id/listqoran_search_rel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/listact_mlist_marginleft"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listqoran_listjoz"
+            android:layout_width="@dimen/listqoran_list_size"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/listqoran_joz"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/listact_mlist_marginleft"
+            android:layout_marginBottom="@dimen/listact_mlist_marginbot"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:cacheColorHint="#00000000"></ListView>
+
+        <ListView
+            android:id="@+id/listqoran_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/listact_mlist_margintop"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="@dimen/listact_mlist_marginbot"
+            android:layout_below="@+id/listqoran_search_rel"
+            android:layout_toLeftOf="@+id/listqoran_listjoz"
+            android:layout_toRightOf="@+id/listqoran_listhezb"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:cacheColorHint="#00000000"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"/>
+
+        <TextView
+            android:id="@+id/listqoran_hezb"
+            android:layout_width="@dimen/listqoran_hezb_size"
+            android:layout_height="wrap_content"
+            android:text="حزب"
+            android:textColor="#660000"
+            android:layout_below="@+id/listqoran_search_rel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/listact_mlist_marginleft"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listqoran_listhezb"
+            android:layout_width="@dimen/listqoran_list_size"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/listqoran_hezb"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/listact_mlist_marginleft"
+            android:layout_marginBottom="@dimen/listact_mlist_marginbot"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:cacheColorHint="#00000000"></ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listqoran_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kadr"></RelativeLayout>
+</FrameLayout>

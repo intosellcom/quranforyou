@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/dialog1_rel"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/dialog1_title_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/dialog1_title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textSize="@dimen/txt_size"
+                    android:textColor="#cc6600"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#cc6600"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dialog1_matn_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog1_title_rel"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/dialog1_matn_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="matn"
+                    android:lineSpacingExtra="1dp"
+                    android:textSize="@dimen/tab_size"
+                    android:textColor="#414242"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"/>
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/dialog1_chb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="roshan"
+                    android:textSize="@dimen/tab_size"
+                    android:textColor="#031dac"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/dialog1_matn_txt"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/MyRadioButton" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dialog1_btn_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:layout_below="@+id/dialog1_matn_rel">
+                <Button
+                    android:id="@+id/dialog1_btn_khob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="خب"
+                    android:textColor="#cc6600"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/tab_size"
+                    android:background="@drawable/submit_alert_btn"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

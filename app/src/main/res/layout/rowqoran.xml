@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rowqoran_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/rowqoran_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaabbbbbbbbbcccdfd vvv ggg hhh ttt yyyyy ssss qqqq"
+            android:textColor="#000000"
+            android:textSize="@dimen/txt_size"
+            android:lineSpacingExtra="0dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp" />
+        <TextView
+            android:id="@+id/rowqoran_fa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaabbbbbbbbbcccdfd vvv ggg hhh ttt yyyyy ssss qqqq"
+            android:textColor="#11785d"
+            android:textSize="@dimen/txt_size"
+            android:lineSpacingExtra="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rowqoran_ar"
+            android:gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

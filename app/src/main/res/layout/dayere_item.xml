@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/porseman_setare"
+        android:elevation="2dp"
+        circle:name="porseman"
+        android:tag="100"/>
+
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/moama_setare"
+        android:elevation="2dp"
+        circle:name="moama"
+        android:tag="44"/>
+
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qoran_setare"
+        android:elevation="2dp"
+        circle:name="qoran"
+        android:tag="55"/>
+
+
+
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tajvid_setare"
+        android:elevation="2dp"
+        circle:name="tajvid"
+        android:tag="22"/>
+
+
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hekayat_setare"
+        android:elevation="2dp"
+        circle:name="hekayat"
+        android:tag="11"/>
+
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/galery_setare"
+        android:elevation="2dp"
+        circle:name="galery"
+        android:tag="110"/>
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/dayere12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hamyan_setare"
+        android:elevation="2dp"
+        circle:name="hamyan"
+        android:tag="112"/>
+
+
+
+</merge>

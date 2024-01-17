@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/listfav_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/listfav_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_90"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+            <TextView
+                android:id="@+id/listfav_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="علاقه مندی ها"
+                android:textSize="@dimen/txt_size"
+                android:textColor="#175001"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/listfav_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/listact_list_margintop"
+            android:layout_marginLeft="@dimen/listact_mlist_marginleft"
+            android:layout_marginRight="@dimen/listact_mlist_marginleft"
+            android:layout_marginBottom="@dimen/listact_mlist_marginbot"
+            android:layout_below="@+id/listfav_top"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical"
+            android:cacheColorHint="#00000000"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listfav_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kadr"></RelativeLayout>
+</FrameLayout>

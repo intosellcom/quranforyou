@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dashbord_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/dashbord_arabi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dashbord_katibe_margintop"
+            android:src="@drawable/matn_ar"
+            android:layout_gravity="top|center_horizontal" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:stretchColumns="*">
+            <TableRow android:layout_marginTop="10dp">
+                <ImageView android:id="@+id/dashboard_porseman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/porseman_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+                <ImageView android:id="@+id/dashboard_tajvid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tajvid_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+                <ImageView android:id="@+id/dashboard_qoran" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qoran_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="30dp">
+                <ImageView android:id="@+id/dashboard_galery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/galery_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+                <ImageView android:id="@+id/dashboard_hekayat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hekayat_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+                <ImageView android:id="@+id/dashboard_moama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/moama_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="30dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@+id/dashboard_hamiyan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hamyan_setare" android:visibility="visible" android:scaleX="0" android:scaleY="0"/>
+            </TableRow>
+        </TableLayout>
+
+        <FrameLayout
+            android:id="@+id/dashbord_frm_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/headr_btn"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dashbord_botheader_margin"/>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dashbord_table_margin"
+                android:layout_marginRight="@dimen/dashbord_table_margin"
+                android:layout_gravity="center_vertical"
+                android:stretchColumns="*">
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/dashbord_komak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/komak_ico"
+                        android:visibility="visible"/>
+                    <ImageView
+                        android:id="@+id/dashbord_tanzimat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tanzimat_ico"
+                        android:visibility="visible"/>
+                    <ImageView
+                        android:id="@+id/dashbord_akarinmotale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/akharinmotale_ico"
+                        android:visibility="visible"/>
+                    <ImageView
+                        android:id="@+id/dashbord_alaqemandiha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fav_ico"
+                        android:visibility="visible"/>
+
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashbord_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kadr"
+        android:visibility="visible"></RelativeLayout>
+
+</FrameLayout>

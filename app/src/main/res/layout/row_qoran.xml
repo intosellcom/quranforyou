@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/row3_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/rowqoran_margin"
+        android:layout_marginRight="@dimen/rowqoran_margin"
+        android:layout_marginLeft="@dimen/rowqoran_margin"
+        android:background="@drawable/row3_80"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/row3_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/submit_txt_row"
+            android:textSize="@dimen/txt_size_big2"
+            android:lineSpacingExtra="0dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/rowqoran_numtxt_margin"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+        <ImageView
+            android:id="@+id/row3_name"
+            android:layout_width="@dimen/rowqoran_fatehe_w"
+            android:layout_height="@dimen/rowqoran_fatehe_h"
+            android:src="@drawable/sname_1"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/row3_maki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/madani"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/rowqoran_numtxt_margin"/>
+        <TextView
+            android:id="@+id/row3_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaa"
+            android:textColor="#175001"
+            android:textSize="@dimen/tab_size"
+            android:layout_below="@+id/row3_lable"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/rowqoran_tozihattxt_margin"
+            android:layout_marginTop="@dimen/rowqoran_tozihattxt_margintop"/>
+    </RelativeLayout>
+
+</RelativeLayout>

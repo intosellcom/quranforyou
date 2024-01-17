@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:id="@+id/row_font_rel"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/row_font_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:focusable = "false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/ic_radio_button_unchecked_black_24dp"/>
+    <TextView
+        android:id="@+id/row_font_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/row_font_radio"
+        android:layout_centerVertical="true"
+        android:text="aa"
+        android:textColor="#000000"
+        android:textSize="@dimen/tab_size"
+        android:layout_marginRight="7dp"
+        android:focusable = "false"
+        android:focusableInTouchMode="false"/>
+
+    <View
+        android:id="@+id/row_font_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c4c4c4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

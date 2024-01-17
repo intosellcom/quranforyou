@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/qoranjoztemp_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/qoranjoztemp_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_90"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:layout_marginRight="@dimen/listact_kadr_marginright"
+            android:layout_marginLeft="@dimen/listact_kadr_marginright">
+            <TextView
+                android:id="@+id/qoranjoztemp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaa sssss ddd fffff  "
+                android:textSize="@dimen/txt_size"
+                android:textColor="#175001"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="@dimen/listact_kadrtxt_marginright"
+                android:layout_marginLeft="@dimen/listact_kadrtxt_marginright"/>
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/qoranjoztemp_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/listact_mlist_margintop"
+            android:layout_marginLeft="@dimen/listact_mlist_marginleft"
+            android:layout_marginRight="@dimen/listact_mlist_marginleft"
+            android:layout_marginBottom="@dimen/listact_mlist_marginbot"
+            android:layout_below="@+id/qoranjoztemp_top"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical"
+            android:cacheColorHint="#00000000"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qoranjoztemp_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kadr"></RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/qoranjoztemp_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/context_btn_marginbot"
+        android:layout_marginRight="@dimen/context_btn_marginleft"
+        android:layout_marginLeft="@dimen/context_btn_marginleft">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board_btn2"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/context_list_marginleft"
+            android:layout_marginLeft="@dimen/context_list_marginleft"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/qoranjoztemp_sharh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_shareh"
+                    android:visibility="gone"/>
+
+
+
+                <ImageView
+                    android:id="@+id/qoranjoztemp_tarjome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_tarjome" />
+
+                <ImageView
+                    android:id="@+id/qoranjoztemp_kuchak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_kuchak" />
+
+                <ImageView
+                    android:id="@+id/qoranjoztemp_bozorg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/submit_bozorg" />
+
+
+
+
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+</FrameLayout>

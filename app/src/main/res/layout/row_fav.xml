@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rowfav_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="@dimen/row_rel_margin"
+        android:layout_marginLeft="@dimen/row_rel_margin"
+        android:background="@drawable/row_big_bg22"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/rowfav_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_ico"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/row_txt_margin"/>
+        <TextView
+            android:id="@+id/rowfav_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aaaabbbbbbbbbcccd"
+            android:textColor="@color/submit_txt_row"
+            android:textSize="@dimen/tab_size"
+            android:lineSpacingExtra="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/rowfav_img"
+            android:layout_marginRight="@dimen/row_txt_margin"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/rowfav_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaa"
+            android:textColor="#175001"
+            android:textSize="@dimen/tab_size"
+            android:layout_below="@+id/rowfav_lable"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/row_txt_margin"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

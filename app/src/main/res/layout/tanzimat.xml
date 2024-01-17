@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/tanzimat_child1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/tanzimat_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/listact_kadr_margintop"
+            android:background="@drawable/row_90"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+
+            <TextView
+                android:id="@+id/tanzimat_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="تنظیمات"
+                android:textColor="#175001"
+                android:textSize="@dimen/txt_size"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tanzimat_top"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="20dp">
+
+            <ScrollView
+                android:id="@+id/tanzimat_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/matntemplate_margintop"
+                android:cacheColorHint="#00000000"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/listact_list_margintop">
+
+                    <RelativeLayout
+                        android:id="@+id/tanzimat_rel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:layout_alignParentTop="true">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/tanzimat_screen_chb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="roshan"
+                            android:textSize="@dimen/txt_size"
+                            android:textColor="#cc6600"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"
+                            android:theme="@style/MyRadioButton"/>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:background="#02bc8a" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tanzimat_rel4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tanzimat_rel1">
+                        <TextView
+                            android:id="@+id/tanzimat_path_titr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="path"
+                            android:textSize="@dimen/txt_size"
+                            android:textColor="#cc6600"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:id="@+id/tanzimat_path_matn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="daryafte kol"
+                            android:textSize="@dimen/tab_size"
+                            android:textColor="#000000"
+                            android:layout_below="@+id/tanzimat_path_titr"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"/>
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tanzimat_taqyir_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="تغییر"
+                        android:textSize="@dimen/tab_size"
+                        android:layout_below="@+id/tanzimat_rel4"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/btn_ico"
+                        android:layout_marginTop="10dp"/>
+
+                    <View
+                        android:id="@+id/tanzimat_line3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tanzimat_taqyir_btn"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#02bc8a" />
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tanzimat_child2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/kadr"></RelativeLayout>
+
+
+</FrameLayout>
